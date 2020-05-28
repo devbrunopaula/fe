@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from '@material-ui/styles';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 
 import Typography from '@material-ui/core/Typography';
 import theme from './ui/Theme'
@@ -21,7 +21,7 @@ function App() {
     
       <Switch>
         {/* <Route exact path='/' component={() => <h1>Home</h1>} /> */}
-        <Route exact path='/' component={Dashboard} />
+        <Route exact path='/' Link to="https://marketing-better-professor.netlify.com/" />
         <Route exact path='/about' component={() => <h1>About</h1>} />
         <Route exact path='/signup' component={SignUp} />
         <Route exact path='/login' component={Login} />
