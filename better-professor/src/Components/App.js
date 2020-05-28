@@ -20,7 +20,8 @@ function App() {
       {/* <Typography variant='h3' color='secondary'>Better Professor App</Typography> */}
     
       <Switch>
-        <Route exact path='/' component={() => <h1>Home</h1>} />
+        {/* <Route exact path='/' component={() => <h1>Home</h1>} /> */}
+        <Route exact path='/' component={Dashboard} />
         <Route exact path='/about' component={() => <h1>About</h1>} />
         <Route exact path='/signup' component={SignUp} />
         <Route exact path='/login' component={Login} />
